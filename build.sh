@@ -1,5 +1,5 @@
 #!/bin/bash
-BASE_DIR=$(dirname "$0")
+BASE_DIR=$(realpath $(dirname "$0"))
 mkdir "$BASE_DIR/Internet"
 cd "$BASE_DIR/Internet"
 wget https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
